@@ -13,6 +13,5 @@ WORKDIR /usr/bin/
 COPY --from=build ["/usr/local/src/hello-world", "."]
 
 EXPOSE $LISTEN_PORT
-#EXPOSE 8082
 
 ENTRYPOINT ["./hello-world"]
